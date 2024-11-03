@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Verification</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://i.pinimg.com/564x/05/8c/02/058c02ca15b75b634b40fcdbf36f5a5f.jpg" alt="Logo">
+            <h1>Signature Verification</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./sign.html">Signup</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+            <li class="mode-toggle">
+                <img id="moonIcon" src="https://i.pinimg.com/564x/c2/1b/06/c21b068e9cc106913f482690dcd104fa.jpg" alt="Moon Mode" class="mode-icon">
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- Welcome Header -->
+        <h2 class="welcome-header">Welcome to Signature Verification</h2>
+
+        <!-- Animated Lines -->
+        <div class="animated-lines">
+            <p class="animated-line">Welcome to the Signature Verification System</p>
+            <p class="animated-line">Upload your signature for verification</p>
+            <p class="animated-line">Accurate results within seconds</p>
+            <p class="animated-line">Secure and privaten for your signature</p>
+            <p class="animated-line">Start now to verify your signature</p>
+        </div>
+
+        <!-- File Upload and Display Divs -->
+        <div class="file-sections">
+            <div class="upload-section">
+                <label for="file-upload">Upload File:</label>
+                <input type="file" id="file-upload" onchange="displayFileName()">
+                <p id="file-name" style="margin-top: 10px;"></p>
+            </div>
+            <div class="display-section" id="display-section">
+                <!-- Empty initially, will show results after verification -->
+            </div>
+        </div>
+
+        <!-- Animated Verify Button -->
+        <button class="verify-button" onclick="verifySignature()">Verify</button>
+
+        <!-- Popup for Verification -->
+        <div class="verification-popup" id="verification-popup">Verified!</div>
+
+        <!-- Verified Records Section -->
+        <div class="verified-records">
+            <h3>Previous Verifications</h3>
+            <ul>
+                <li class="record">Record 1: Verified</li>
+                <li class="record">Record 2: Verified</li>
+                <li class="record">Record 3: Verified</li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
